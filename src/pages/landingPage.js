@@ -22,7 +22,7 @@ const LandingPage = () => {
                 <img src={HondaNon} />
             </header>
             <main>
-                <div className="columns-2 p-6">
+                <div className="columns-2 px-6 py-4">
                     <div id="say-hello">
                         <h2 className="secondary-color font-medium text-sm"><span style={{color:"black"}}>👋</span> สวัสดีคุณ,<br/>
                             <span id="user-name" className="text-black text-lg">LINE-Cameron</span>
@@ -30,7 +30,7 @@ const LandingPage = () => {
                     </div>
                     <h2 className="text-right secondary-color font-medium text-sm">คุณมีคะแนน<br/>
                         <span id="points" className="text-xl primary-color">
-                            <FontAwesomeIcon icon={faStar} className="mr-1"/>
+                            <FontAwesomeIcon icon={faStar} className="mr-2"/>
                             50 คะแนน
                         </span>
                     </h2>
