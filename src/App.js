@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="p-6">
       <p className='pb-4'>
-        For English, please click <a href="#eng" className='underline'>here</a>
+        For English, please see the message below.
       </p>
       <h1 className="text-3xl font-bold">
         Hallo Welt! Ich bin ein React-App!
