@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import HeaderMobile from "../assets/components/header";
 
-const PointCollection = (props) => {
+const PointCollection = () => {
     return (
         <div>
             <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="วิธีเก็บคะแนน" secondBtn={false}/>
