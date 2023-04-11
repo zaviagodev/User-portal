@@ -1,5 +1,5 @@
 * {
-  font-family:'Inter', 'Sukhumvit Set', sans-serif;
+  font-family:'Sukhumvit Set', sans-serif;
 }
 
 $primary_color:#D32F2F;
@@ -38,6 +38,10 @@ $secondary_color:#00000061;
   font-family:'Sukhumvit Set';
   src:url('./assets/fonts/sukhumvit-set/SukhumvitSet-Bold.ttf');
   font-weight:700;
+}
+
+.font-with-inter {
+  font-family:"Inter", 'Sukhumvit Set', sans-serif;
 }
 
 main {
