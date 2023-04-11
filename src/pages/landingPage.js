@@ -7,6 +7,7 @@ import classicCard from "../assets/images/classic-card.svg";
 import silverCard from "../assets/images/silver-card.svg";
 import goldCard from "../assets/images/gold-card.svg";
 import platinumCard from "../assets/images/platinum-card.svg";
+import giftVoucher from "../assets/images/gift-voucher.svg";
 import { faChevronRight, faGiftCard } from "@fortawesome/pro-solid-svg-icons";
 import FooterMenu from "../assets/components/footerMenu";
 
@@ -15,6 +16,18 @@ const LandingPage = () => {
     const [silver, setSilver] = useState(false);
     const [gold, setGold] = useState(false);
     const [platinum, setPlatinum] = useState(false);
+
+    const CardReward = (props) => {
+        return (
+            <Card className="reward-cards" title={(<img src={props.image}/>)}>
+                <h2 className="font-bold text-sm">{props.name}</h2>
+                <h3 className="primary-color font-semibold mt-2 text-sm">
+                    <FontAwesomeIcon icon={faStar} className="mr-2"/>
+                    {props.point} คะแนน
+                </h3>
+            </Card>
+        )
+    }
 
     return (
         <div>
@@ -95,6 +108,9 @@ const LandingPage = () => {
 
                 <section className="mt-7 p-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
                     <h2 className="font-bold">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
+                    <div>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
+                    </div>
                 </section>
             </main>
             <FooterMenu activeMenu={1}/>

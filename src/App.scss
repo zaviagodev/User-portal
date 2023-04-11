@@ -44,8 +44,18 @@ $secondary_color:#00000061;
   font-family:"Inter", 'Sukhumvit Set', sans-serif;
 }
 
+.reward-cards {
+  width:182px;
+  .ant-card-head {
+    padding:0
+  }
+  .ant-card-body {
+    padding:10px 17px 18px 17px;
+  }
+}
+
 main {
-  margin-top:78px;
+  margin:78px 0 69px 0;
 }
 
 .secondary-color {
