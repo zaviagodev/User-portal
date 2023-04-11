@@ -70,3 +70,13 @@ $secondary_color:#00000061;
     padding:120px 20px 20px;
   }
 }
+
+.point-collect-btn {
+  height:inherit;
+  padding:17px 20px;
+  border:none;
+  border-radius:8px;
+  background: linear-gradient(90deg, #F79B20 34.61%, #F2743A 119.87%);
+  color:white;
+  &:hover {color:white !important}
+}

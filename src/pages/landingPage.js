@@ -7,7 +7,7 @@ import classicCard from "../assets/images/classic-card.svg";
 import silverCard from "../assets/images/silver-card.svg";
 import goldCard from "../assets/images/gold-card.svg";
 import platinumCard from "../assets/images/platinum-card.svg";
-import { faGiftCard } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronRight, faGiftCard } from "@fortawesome/pro-solid-svg-icons";
 
 const LandingPage = () => {
     const [classic, setClassic] = useState(true);
@@ -17,7 +17,7 @@ const LandingPage = () => {
 
     return (
         <div>
-            <header className="p-6 flex justify-center" style={{borderBottom:"1px solid #0000000D"}}>
+            <header className="p-6 pb-3 flex justify-center" style={{borderBottom:"1px solid #0000000D"}}>
                 <img src={HondaNon} />
             </header>
             <div className="columns-2 p-6">
@@ -77,7 +77,18 @@ const LandingPage = () => {
                         </div>
                         </div>
                     </Card>
-                    ) : null}
+                ) : null}
+
+                <div style={{paddingTop:"18px"}}>
+                    <a href="/point-collection">
+                    <Button className="w-full text-left point-collect-btn">
+                        <Space className="flex justify-between">
+                            วิธีการเก็บคะแนน
+                            <FontAwesomeIcon icon={faChevronRight}/>
+                        </Space>
+                    </Button>
+                    </a>
+                </div>
             </div>
         </div>
     );
