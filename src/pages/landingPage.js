@@ -36,7 +36,7 @@ const LandingPage = () => {
                     </h2>
                 </div>
 
-                <div className="px-6 member-card">
+                <section className="px-6 member-card">
                     {classic || silver || gold || platinum ? (
                         <Card
                             style={{
@@ -91,7 +91,11 @@ const LandingPage = () => {
                         </Button>
                         </a>
                     </div>
-                </div>
+                </section>
+
+                <section className="mt-7 p-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
+                    <h2 className="font-bold" style={{fontFamily:"sukhumvit set"}}>ของรางวัลทั้งหมด (<span id="num-items" style={{fontFamily:"sukhumvit set"}}>9</span>)</h2>
+                </section>
             </main>
             <FooterMenu activeMenu={1}/>
         </div>
