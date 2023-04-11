@@ -107,7 +107,7 @@ const LandingPage = () => {
                 </section>
 
                 <section className="mt-7 p-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
-                    <h2 className="font-bold">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
+                    <h2 className="font-bold mb-2">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
                     <div>
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
                     </div>
