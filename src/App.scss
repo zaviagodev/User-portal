@@ -1,8 +1,15 @@
+* {
+  font-family:'Inter', 'Sukhumvit Set', sans-serif;
+}
+
 $primary_color:#D32F2F;
 $menu_inactive_color:#BBBBBB;
 $text_color:#231F20;
 $secondary_color:#00000061;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Sukhumvit Set */
 @font-face {
   font-family:'Sukhumvit Set';
   src:url('./assets/fonts/sukhumvit-set/SukhumvitSet-Light.ttf');
@@ -49,10 +56,17 @@ $secondary_color:#00000061;
   color: $text_color;
 }
 
-body {
-  font-family:'Sukhumvit Set';
-}
-
 .App {
   text-align: center;
+}
+
+.member-card {
+  .ant-card {
+    background-repeat:no-repeat;
+    background-size:cover;
+    border:none;
+  }
+  .ant-card-body {
+    padding:120px 20px 20px;
+  }
 }
