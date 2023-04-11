@@ -3,8 +3,8 @@ import './App.css';
 
 export default function App() {
   return (
-    <div className="p-6">
-      <p className='pb-4'>
+    <div className="p-8">
+      <p className='pb-6'>
         For English, please see the message below.
       </p>
       <h1 className="text-3xl font-bold">
