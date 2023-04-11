@@ -16,19 +16,6 @@ const LandingPage = () => {
     const [gold, setGold] = useState(false);
     const [platinum, setPlatinum] = useState(false);
 
-    const upgradeMember = (privilege) => {
-        if (privilege === classic){
-            setClassic(false);
-            setSilver(true);
-        } else if (privilege === silver){
-            setSilver(false);
-            setGold(true);
-        } else if (privilege === gold){
-            setGold(false);
-            setPlatinum(true);
-        }
-    }
-
     return (
         <div>
             <header className="p-6 pb-3 flex justify-center fixed w-full bg-white top-0 z-50" style={{borderBottom:"1px solid #0000000D"}}>
