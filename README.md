@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Additional dependencies
+
+npm install antd
+
+npm install react-router-dom
+
+npm install --save @fortawesome/react-fontawesome
+
+npm install sass
+
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/pro-solid-svg-icons
+
 ## Available Scripts
 
 In the project directory, you can run:
