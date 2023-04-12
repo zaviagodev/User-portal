@@ -6,8 +6,10 @@ import RewardsPage from './pages/points-rewards/rewards';
 import History from './pages/history/history';
 import MyAccount from './pages/my-account/my-account';
 
-import PointCollectionAccount from './pages/points-rewards/pointCollectionAccount';
-import TermsAndConditions from './pages/points-rewards/termsAndConditions';
+import PointCollectionAccount from './pages/my-account/pointCollectionAccount';
+import TermsAndConditions from './pages/my-account/termsAndConditions';
+import ConsentForDisclosure from './pages/my-account/consentForDisclosure';
+import ExchangeRewards from './pages/my-account/exchangeRewards';
 import './App.scss';
 
 export default function App() {
@@ -19,8 +21,11 @@ export default function App() {
         <Route path="/rewards" element={<RewardsPage />} />
         <Route path="/history" element={<History />} />
         <Route path="/my-account" element={<MyAccount />} />
+
         <Route path="/point-collection-account" element={<PointCollectionAccount />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/consent-for-disclosure" element={<ConsentForDisclosure />} />
+        <Route path="/exchange-rewards" element={<ExchangeRewards />} />
       </Routes>
     </Router>
   )
