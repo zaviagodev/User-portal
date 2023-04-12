@@ -13,10 +13,10 @@ import FooterMenu from "../../assets/components/footerMenu";
 import RewardSection from "../../assets/components/reward-section";
 
 const LandingPage = () => {
-    const [classic, setClassic] = useState(false);
+    const [classic, setClassic] = useState(true);
     const [silver, setSilver] = useState(false);
     const [gold, setGold] = useState(false);
-    const [platinum, setPlatinum] = useState(true);
+    const [platinum, setPlatinum] = useState(false);
 
     return (
         <div>

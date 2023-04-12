@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, Button, Space } from "antd";
-import giftVoucher from "../../assets/images/gift-voucher.svg";
-import brandModulo from "../../assets/images/brand-modulo.svg";
-import neckPillowCat from "../../assets/images/neck-pillow-cat.svg";
-import neckPillowModulo from "../../assets/images/neck-pillow-modulo.svg";
-import pillowModulo from "../../assets/images/pillow-modulo.svg";
-import coolerBag from "../../assets/images/cooler-bag.svg";
+import giftVoucher from "../../assets/images/gift-voucher.png";
+import brandModulo from "../../assets/images/brand-modulo.png";
+import neckPillowCat from "../../assets/images/neck-pillow-cat.png";
+import neckPillowModulo from "../../assets/images/neck-pillow-modulo.png";
+import pillowModulo from "../../assets/images/pillow-modulo.png";
+import coolerBag from "../../assets/images/cooler-bag.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
