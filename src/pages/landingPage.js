@@ -9,6 +9,8 @@ import goldCard from "../assets/images/gold-card.svg";
 import platinumCard from "../assets/images/platinum-card.svg";
 import giftVoucher from "../assets/images/gift-voucher.svg";
 import brandModulo from "../assets/images/brand-modulo.svg";
+import neckPillowCat from "../assets/images/neck-pillow-cat.svg";
+import neckPillowModulo from "../assets/images/neck-pillow-modulo.svg";
 import { faChevronRight, faGiftCard } from "@fortawesome/pro-solid-svg-icons";
 import FooterMenu from "../assets/components/footerMenu";
 
@@ -19,17 +21,17 @@ const LandingPage = () => {
     const [platinum, setPlatinum] = useState(false);
 
     const CardReward = (props) => {
-        return (
-            <a href={props.rewardLink}>
-                <Card className="reward-cards" title={(<img src={props.image}/>)}>
-                    <h2 className="font-bold text-sm pe-4">{props.name}</h2>
-                    <h3 className="primary-color font-semibold mt-2 text-sm">
-                        <FontAwesomeIcon icon={faStar} className="mr-2"/>
-                        {props.point} คะแนน
-                    </h3>
-                </Card>
-            </a>
-        )
+      return (
+        <a href={props.rewardLink}>
+          <Card className="reward-cards" title={(<img src={props.image}/>)}>
+            <h2 className="font-bold text-sm pe-3">{props.name}</h2>
+            <h3 className="primary-color font-semibold mt-2 text-sm">
+                <FontAwesomeIcon icon={faStar} className="mr-2"/>
+                {props.point} คะแนน
+            </h3>
+          </Card>
+        </a>
+      )
     }
 
     return (
@@ -114,13 +116,13 @@ const LandingPage = () => {
                     <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
                         <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30" rewardLink="#"/>
-                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10" rewardLink="#"/>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="100" rewardLink="#"/>
                     </div>
 
                     <h2 className="font-bold mt-8 mb-2 px-6">ของรางวัล (<span id="num-items">5</span>)</h2>
                     <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
-                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
-                        <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30" rewardLink="#"/>
+                        <CardReward image={neckPillowModulo} name="หมอนรองคอ Brand Modulo" point="40" rewardLink="#"/>
+                        <CardReward image={neckPillowCat} name="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" point="40" rewardLink="#"/>
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10" rewardLink="#"/>
                     </div>
 
