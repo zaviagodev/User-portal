@@ -11,10 +11,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const MyAccount = () => {
+    document.body.style.backgroundColor = "white";
     const CardAccount = (props) => {
       return (
         <Link to={props.link}>
-          <Button className="bg-white flex items-center w-full justify-between mb-4" style={{height:"inherit",padding:"15px 20px",border:"none",boxShadow:"none"}}>
+          <Button className="bg-white flex items-center w-full justify-between mb-4" style={{height:"inherit",padding:"15px 20px",border:"none",boxShadow:"none",borderRadius:"8px"}}>
             <Space>
               <FontAwesomeIcon icon={props.icon} style={{minWidth:"24px"}}/>
               <span className="font-medium">{props.text}</span>
@@ -57,7 +58,7 @@ const MyAccount = () => {
                 </section>
                 <section className="mt-7 p-6 pb-20" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
                     <h2 className="font-bold mb-2">การตั้งค่าและความเป็นส่วนตัว</h2>
-                    <CardAccount link="#" text="ข้อมูลส่วนตัว" icon={faUserPen}/>
+                    <CardAccount link="/edit-account" text="ข้อมูลส่วนตัว" icon={faUserPen}/>
                     <CardAccount link="/terms-and-conditions" text="ข้อกำหนดและเงื่อนไข" icon={faShield}/>
                     <CardAccount link="/consent-for-disclosure" text="ความยินยอมในการเปิดเผยข้อมูล" icon={faLock}/>
 

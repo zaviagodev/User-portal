@@ -43,6 +43,47 @@ $secondary_color:#00000061;
   font-family:"Inter", 'Sukhumvit Set', sans-serif;
 }
 
+.ant-input,.ant-picker {
+  &:hover,&:focus {
+    border:none;
+    box-shadow:none;
+  }
+}
+
+.save-btn {
+  display:block;
+  height:inherit;
+  width:100%;
+  border:none;
+  border-radius:8px;
+  color:white;
+  font-size:19px;
+  font-weight:700;
+  height:56px;
+  &.inactive {
+    background-color:#BBBBBB;
+    color:white;
+  }
+  &.active {
+    background-color:$primary_color;
+    color:white;
+  }
+}
+
+input{
+  font-family:'Sukhumvit Set', sans-serif !important;
+}
+
+.input-account {
+  padding:11px 10px;
+  height:40px;
+  margin-top:6px;
+  border:none;
+  &::placeholder{
+    color: #00000061;
+  }
+}
+
 .reward-cards {
   min-width:170px;
   border-radius:10px;
