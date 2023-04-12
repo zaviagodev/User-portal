@@ -22,7 +22,7 @@ const FooterMenu = (props) => {
               </Link>
             </li>
             <li className={`text-sm ${(props.activeMenu === 3 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-              <Link to="#">
+              <Link to="/history">
                 <FontAwesomeIcon icon={faHistory} className="block text-xl m-auto"/>
                 <span className="mt-1 inline-block">ประวัติ</span>
               </Link>

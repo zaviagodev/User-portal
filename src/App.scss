@@ -55,6 +55,27 @@ $secondary_color:#00000061;
   }
 }
 
+.tabs-menu{
+  .ant-tabs{
+    .ant-tabs-tab{
+      padding:12px;
+      margin:0;
+      width:50%;
+      justify-content:center;
+    }
+    .ant-tabs-ink-bar{
+      background:$primary_color !important;
+    }
+  }
+  .ant-tabs-nav-list,.ant-tabs-nav-wrap{
+    display:block !important;
+    width:100%;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color:$primary_color !important;
+  }
+}
+
 main {
   margin:78px 0 69px 0;
 }
