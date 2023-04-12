@@ -79,7 +79,7 @@ input{
   height:40px;
   margin-top:6px;
   border:none;
-  &::placeholder{
+  &::placeholder,.ant-picker-input input::placeholder {
     color: #00000061;
   }
 }
