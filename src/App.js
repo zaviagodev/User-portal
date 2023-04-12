@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/landingPage';
-import PointCollection from './pages/pointCollection';
+import LandingPage from './pages/homepage/landingPage';
+import PointCollection from './pages/homepage/pointCollection';
+import RewardsPage from './pages/points-rewards/rewards';
 import './App.scss';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/point-collection" element={<PointCollection />} />
+        <Route path="/rewards" element={<RewardsPage />} />
       </Routes>
     </Router>
   )

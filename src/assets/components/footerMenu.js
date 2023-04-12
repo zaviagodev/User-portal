@@ -8,13 +8,13 @@ const FooterMenu = (props) => {
           <nav>
             <ul className="flex justify-between">
               <li className={`text-sm ${(props.activeMenu === 1 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="#">
+                <a href="/">
                   <FontAwesomeIcon icon={faHome} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">หน้าหลัก</span>
                 </a>
               </li>
               <li className={`text-sm ${(props.activeMenu === 2 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="#">
+                <a href="/rewards">
                   <FontAwesomeIcon icon={faGift} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">แลกของรางวัล</span>
                 </a>
