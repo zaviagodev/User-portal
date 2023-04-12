@@ -8,7 +8,7 @@ const HeaderMobile = (props) => {
                 <a href={props.firstLink} className="inline">
                     <FontAwesomeIcon icon={props.firstIcon} className="text-2xl"/>
                 </a>
-                <h1 className="font-bold text-lg">{props.title}</h1>
+                <h1 className="font-bold text-lg -ml-3">{props.title}</h1>
                 <a href={props.secondLink} className={`text-2xl ${(props.secondBtn == false ? "invisible" : "")}`}>
                     <FontAwesomeIcon icon={props.secondIcon} className={"text-2xl"}/>
                 </a>
