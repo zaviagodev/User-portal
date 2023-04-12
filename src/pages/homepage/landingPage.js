@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Card, Button, Space } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/pro-solid-svg-icons";
+import { faGiftCard } from "@fortawesome/pro-regular-svg-icons";
 import HondaNon from "../../assets/images/honda-non.svg";
 import classicCard from "../../assets/images/classic-card.svg";
 import silverCard from "../../assets/images/silver-card.svg";
 import goldCard from "../../assets/images/gold-card.svg";
 import platinumCard from "../../assets/images/platinum-card.svg";
-import { faChevronRight, faGiftCard } from "@fortawesome/pro-solid-svg-icons";
 import FooterMenu from "../../assets/components/footerMenu";
 import RewardSection from "../../assets/components/reward-section";
 
@@ -94,7 +95,7 @@ const LandingPage = () => {
                     </div>
                 </section>
 
-                <section className="mt-7 py-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
+                <section className="mt-7 py-6 pb-20" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
                     <RewardSection />
                 </section>
             </main>

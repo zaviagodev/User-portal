@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGift, faHistory, faHome, faUser } from "@fortawesome/pro-solid-svg-icons";
+import { faHistory, faHome } from "@fortawesome/pro-solid-svg-icons";
+import { faGift, faUser } from "@fortawesome/pro-regular-svg-icons";
 
 const FooterMenu = (props) => {
     return (

@@ -14,6 +14,7 @@ npm install sass
 
 npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/pro-solid-svg-icons
+npm i --save @fortawesome/pro-regular-svg-icons
 
 ## Available Scripts
 
