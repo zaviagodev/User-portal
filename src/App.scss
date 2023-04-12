@@ -45,7 +45,9 @@ $secondary_color:#00000061;
 }
 
 .reward-cards {
-  width:182px;
+  min-width:180px;
+  border-radius:10px;
+  border:none;
   .ant-card-head {
     padding:0
   }

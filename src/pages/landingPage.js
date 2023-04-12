@@ -8,6 +8,7 @@ import silverCard from "../assets/images/silver-card.svg";
 import goldCard from "../assets/images/gold-card.svg";
 import platinumCard from "../assets/images/platinum-card.svg";
 import giftVoucher from "../assets/images/gift-voucher.svg";
+import brandModulo from "../assets/images/brand-modulo.svg";
 import { faChevronRight, faGiftCard } from "@fortawesome/pro-solid-svg-icons";
 import FooterMenu from "../assets/components/footerMenu";
 
@@ -20,7 +21,7 @@ const LandingPage = () => {
     const CardReward = (props) => {
         return (
             <Card className="reward-cards" title={(<img src={props.image}/>)}>
-                <h2 className="font-bold text-sm">{props.name}</h2>
+                <h2 className="font-bold text-sm pe-4">{props.name}</h2>
                 <h3 className="primary-color font-semibold mt-2 text-sm">
                     <FontAwesomeIcon icon={faStar} className="mr-2"/>
                     {props.point} คะแนน
@@ -106,9 +107,11 @@ const LandingPage = () => {
                     </div>
                 </section>
 
-                <section className="mt-7 p-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
-                    <h2 className="font-bold mb-2">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
-                    <div>
+                <section className="mt-7 py-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
+                    <h2 className="font-bold mb-2 px-6">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
+                    <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
+                        <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30"/>
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
                     </div>
                 </section>
