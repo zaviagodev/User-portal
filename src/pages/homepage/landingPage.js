@@ -5,18 +5,18 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/pro-solid-svg-icons";
 import { faGiftCard } from "@fortawesome/pro-regular-svg-icons";
 import HondaNon from "../../assets/images/honda-non.svg";
-import classicCard from "../../assets/images/classic-card.svg";
-import silverCard from "../../assets/images/silver-card.svg";
-import goldCard from "../../assets/images/gold-card.svg";
-import platinumCard from "../../assets/images/platinum-card.svg";
+import classicCard from "../../assets/images/classic-card.png";
+import silverCard from "../../assets/images/silver-card.png";
+import goldCard from "../../assets/images/gold-card.png";
+import platinumCard from "../../assets/images/platinum-card.png";
 import FooterMenu from "../../assets/components/footerMenu";
 import RewardSection from "../../assets/components/reward-section";
 
 const LandingPage = () => {
-    const [classic, setClassic] = useState(true);
+    const [classic, setClassic] = useState(false);
     const [silver, setSilver] = useState(false);
     const [gold, setGold] = useState(false);
-    const [platinum, setPlatinum] = useState(false);
+    const [platinum, setPlatinum] = useState(true);
 
     return (
         <div>
