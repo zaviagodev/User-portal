@@ -10,7 +10,7 @@ const HeaderMobile = (props) => {
             <FontAwesomeIcon icon={props.firstIcon} className="text-2xl" style={{minWidth:"24px"}}/>
           </Link>
           <h1 className={`font-bold text-lg`}>{props.title}</h1>
-          <Link to={props.secondLink} className={`text-2xl ${(props.secondBtn == false ? "w-6 invisible" : "w-6")}`}>
+          <Link to={props.secondLink} className={`text-2xl w-6 flex ${(props.secondBtn == false ? "invisible" : "")}`}>
             <FontAwesomeIcon icon={props.secondIcon} className="text-2xl" style={{minWidth:"24px"}}/>
           </Link>
         </header>
