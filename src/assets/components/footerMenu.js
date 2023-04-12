@@ -28,7 +28,7 @@ const FooterMenu = (props) => {
               </Link>
             </li>
             <li className={`text-sm ${(props.activeMenu === 4 ? "primary-color" : "menu-inactive-color")}`}>
-              <Link to="#">
+              <Link to="/my-account">
                 <FontAwesomeIcon icon={faUser} className="block text-xl m-auto"/>
                 <span className={`mt-1 inline-block ${(props.activeMenu === 4 ? "font-bold" : "font-medium")}`}>ข้อมูลของฉัน</span>
               </Link>

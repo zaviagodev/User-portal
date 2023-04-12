@@ -4,6 +4,7 @@ import LandingPage from './pages/homepage/landingPage';
 import PointCollection from './pages/homepage/pointCollection';
 import RewardsPage from './pages/points-rewards/rewards';
 import History from './pages/history/history';
+import MyAccount from './pages/my-account/my-account';
 import './App.scss';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/point-collection" element={<PointCollection />} />
         <Route path="/rewards" element={<RewardsPage />} />
         <Route path="/history" element={<History />} />
+        <Route path="/my-account" element={<MyAccount />} />
       </Routes>
     </Router>
   )

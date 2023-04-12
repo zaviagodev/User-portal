@@ -61,7 +61,7 @@ const History = () => {
     return (
       <div>
         <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="ประวัติ" secondBtn={false}/>
-          <main className="p-6 tabs-menu" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
+          <main className="p-6 tabs-menu" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0",height:"100%"}}>
             <Tabs defaultActiveKey="1" items={menus} centered={true}/>
           </main>
         <FooterMenu activeMenu={3}/>
