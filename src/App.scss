@@ -55,6 +55,12 @@ $secondary_color:#00000061;
   }
 }
 
+.card-history {
+  .ant-card-body {
+    padding:16px 20px;
+  }
+}
+
 .tabs-menu{
   .ant-tabs{
     .ant-tabs-tab{
@@ -75,6 +81,11 @@ $secondary_color:#00000061;
   .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
     color:$primary_color !important;
   }
+}
+
+.history-title {
+  width:75%;
+  white-space:pre;
 }
 
 main {
