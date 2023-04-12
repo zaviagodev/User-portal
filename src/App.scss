@@ -1,7 +1,7 @@
 *{font-family:'Sukhumvit Set', sans-serif}
 ::-webkit-scrollbar{display:none}
 
-$primary_color:#D32F2F;
+$primary_color:#F0592A;
 $menu_inactive_color:#BBBBBB;
 $text_color:#231F20;
 $secondary_color:#00000061;
@@ -62,6 +62,7 @@ $secondary_color:#00000061;
       margin:0;
       width:50%;
       justify-content:center;
+      font-weight:600;
     }
     .ant-tabs-ink-bar{
       background:$primary_color !important;

@@ -12,7 +12,7 @@ const History = () => {
 
     const CardHistory = (props) => {
         return (
-          <div className="mb-6">
+          <div className="mb-4">
             <Card>
               <div className="columns-2 flex items-center justify-between">
                 <div className="block">
@@ -35,6 +35,7 @@ const History = () => {
             children: (
               <div>
                 <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={true}/>
+                <CardHistory title="แลกรางวัลเป็นคะแนน" date="22 ม.ค. 2022" point="10" positive={true}/>
                 <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={true}/>
                 <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={true}/>
               </div>
@@ -45,9 +46,9 @@ const History = () => {
             label: 'คะแนนที่ใช้ไป',
             children: (
               <div>
-                <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={false}/>
-                <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={false}/>
-                <CardHistory title="เข้าใช้บริการปกติ" date="22 ม.ค. 2022" point="10" positive={false}/>
+                <CardHistory title="คูปองแทนเงินสดมูลค่า 50 บาท" date="22 ม.ค. 2022" point="10" positive={false}/>
+                <CardHistory title="คูปองแทนเงินสดมูลค่า 200 บาท" date="22 ม.ค. 2022" point="30" positive={false}/>
+                <CardHistory title="คูปองแทนเงินสดมูลค่า 500 บาท" date="22 ม.ค. 2022" point="50" positive={false}/>
               </div>
             )
         }
@@ -56,7 +57,7 @@ const History = () => {
     return (
         <div>
             <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="ประวัติ" secondBtn={false}/>
-            <main className="p-6 tabs-menu">
+            <main className="p-6 tabs-menu" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
                 <Tabs defaultActiveKey="1" items={menus} onChange={onChange} centered={true}/>
             </main>
             <FooterMenu activeMenu={3}/>
