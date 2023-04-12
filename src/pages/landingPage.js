@@ -108,11 +108,25 @@ const LandingPage = () => {
                 </section>
 
                 <section className="mt-7 py-6" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
-                    <h2 className="font-bold mb-2 px-6">ของรางวัลทั้งหมด (<span id="num-items">9</span>)</h2>
+                    <h2 className="font-bold mb-2 px-6">ของรางวัลทั้งหมด (<span id="num-all-items">9</span>)</h2>
                     <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
                         <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30"/>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10"/>
+                    </div>
+
+                    <h2 className="font-bold mt-8 mb-2 px-6">ของรางวัล (<span id="num-items">5</span>)</h2>
+                    <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
                         <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
+                        <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30"/>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10"/>
+                    </div>
+
+                    <h2 className="font-bold mt-8 mb-2 px-6">คูปองแทนเงินสด (<span id="num-coupons">4</span>)</h2>
+                    <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10"/>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 200 บาท" point="30"/>
+                        <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10"/>
                     </div>
                 </section>
             </main>
