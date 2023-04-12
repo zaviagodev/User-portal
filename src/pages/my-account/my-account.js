@@ -58,11 +58,11 @@ const MyAccount = () => {
                 <section className="mt-7 p-6 pb-20" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
                     <h2 className="font-bold mb-2">การตั้งค่าและความเป็นส่วนตัว</h2>
                     <CardAccount link="#" text="ข้อมูลส่วนตัว" icon={faUserPen}/>
-                    <CardAccount link="#" text="ข้อกำหนดและเงื่อนไข" icon={faShield}/>
+                    <CardAccount link="/terms-and-conditions" text="ข้อกำหนดและเงื่อนไข" icon={faShield}/>
                     <CardAccount link="#" text="ความยินยอมในการเปิดเผยข้อมูล" icon={faLock}/>
 
                     <h2 className="font-bold mt-6 mb-2">ความช่วยเหลือ</h2>
-                    <CardAccount link="#" text="วิธีเก็บคะแนน" icon={faBook}/>
+                    <CardAccount link="/point-collection-account" text="วิธีเก็บคะแนน" icon={faBook}/>
                     <CardAccount link="#" text="วิธีแลกของรางวัล" icon={faGift}/>
                     <CardAccount link="#" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
 
