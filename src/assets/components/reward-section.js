@@ -5,7 +5,7 @@ import brandModulo from "../../assets/images/brand-modulo.svg";
 import neckPillowCat from "../../assets/images/neck-pillow-cat.svg";
 import neckPillowModulo from "../../assets/images/neck-pillow-modulo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const RewardSection = () => {
     const CardReward = (props) => {
@@ -29,11 +29,19 @@ const RewardSection = () => {
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
                 <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30" rewardLink="#"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="100" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
+                <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="100" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
+                <CardReward image={brandModulo} name="ปลอกเข็มขัดนิรภัย Brand Modulo" point="30" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="100" rewardLink="#"/>
             </div>
 
             <h2 className="font-bold mt-8 mb-2 px-6">ของรางวัล (<span id="num-items">5</span>)</h2>
             <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
                 <CardReward image={neckPillowModulo} name="หมอนรองคอ Brand Modulo" point="40" rewardLink="#"/>
+                <CardReward image={neckPillowCat} name="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" point="40" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10" rewardLink="#"/>
                 <CardReward image={neckPillowCat} name="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" point="40" rewardLink="#"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10" rewardLink="#"/>
             </div>
@@ -42,7 +50,8 @@ const RewardSection = () => {
             <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 200 บาท" point="30" rewardLink="#"/>
-                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="10" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 500 บาท" point="50" rewardLink="#"/>
+                <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 1,200 บาท" point="100" rewardLink="#"/>
             </div>
         </>
     )
