@@ -10,6 +10,7 @@ import PointCollectionAccount from './pages/my-account/pointCollectionAccount';
 import TermsAndConditions from './pages/my-account/termsAndConditions';
 import ConsentForDisclosure from './pages/my-account/consentForDisclosure';
 import ExchangeRewards from './pages/my-account/exchangeRewards';
+import MemberCondition from './pages/my-account/memberCondition';
 import './App.scss';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/consent-for-disclosure" element={<ConsentForDisclosure />} />
         <Route path="/exchange-rewards" element={<ExchangeRewards />} />
+        <Route path="/member-condition" element={<MemberCondition />} />
       </Routes>
     </Router>
   )

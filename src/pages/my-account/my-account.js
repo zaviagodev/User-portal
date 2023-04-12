@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Space } from "antd";
+import { Avatar, Button, Space, Modal } from "antd";
 import { faChevronLeft, faChevronRight } from "@fortawesome/pro-solid-svg-icons";
 import { faGiftCard, faUser, faUserPen, faShield, faLock, faBook, faGift, faCreditCardFront, faArrowRightFromBracket } from "@fortawesome/pro-regular-svg-icons";
 import FooterMenu from "../../assets/components/footerMenu";
@@ -64,7 +64,7 @@ const MyAccount = () => {
                     <h2 className="font-bold mt-6 mb-2">ความช่วยเหลือ</h2>
                     <CardAccount link="/point-collection-account" text="วิธีเก็บคะแนน" icon={faBook}/>
                     <CardAccount link="/exchange-rewards" text="วิธีแลกของรางวัล" icon={faGift}/>
-                    <CardAccount link="#" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
+                    <CardAccount link="/member-condition" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
 
                     <h2 className="font-bold mt-6 mb-2">บัญชี</h2>
                     <CardAccount link="#" text="ออกจากระบบ" icon={faArrowRightFromBracket}/>
