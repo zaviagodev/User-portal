@@ -8,11 +8,12 @@ import pillowModulo from "../../assets/images/pillow-modulo.svg";
 import coolerBag from "../../assets/images/cooler-bag.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const RewardSection = () => {
     const CardReward = (props) => {
         return (
-          <a href={props.rewardLink}>
+          <Link to={props.rewardLink}>
             <Card className="reward-cards" title={(<img src={props.image}/>)}>
               <h2 className="font-bold text-sm pe-3">{props.name}</h2>
               <h3 className="primary-color font-semibold mt-2 text-sm">
@@ -20,7 +21,7 @@ const RewardSection = () => {
                   {props.point} คะแนน
               </h3>
             </Card>
-          </a>
+          </Link>
         )
       }
 

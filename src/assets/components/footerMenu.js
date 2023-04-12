@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHistory, faHome } from "@fortawesome/pro-solid-svg-icons";
 import { faGift, faUser } from "@fortawesome/pro-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const FooterMenu = (props) => {
     return (
@@ -9,28 +10,28 @@ const FooterMenu = (props) => {
           <nav>
             <ul className="flex justify-between">
               <li className={`text-sm ${(props.activeMenu === 1 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="/">
+                <Link to="/">
                   <FontAwesomeIcon icon={faHome} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">หน้าหลัก</span>
-                </a>
+                </Link>
               </li>
               <li className={`text-sm ${(props.activeMenu === 2 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="/rewards">
+                <Link to="/rewards">
                   <FontAwesomeIcon icon={faGift} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">แลกของรางวัล</span>
-                </a>
+                </Link>
               </li>
               <li className={`text-sm ${(props.activeMenu === 3 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="#">
+                <Link to="#">
                   <FontAwesomeIcon icon={faHistory} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">ประวัติ</span>
-                </a>
+                </Link>
               </li>
               <li className={`text-sm ${(props.activeMenu === 4 ? "primary-color font-bold" : "menu-inactive-color font-medium")}`}>
-                <a href="#">
+                <Link to="#">
                   <FontAwesomeIcon icon={faUser} className="block text-xl m-auto"/>
                   <span className="mt-1 inline-block">ข้อมูลของฉัน</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
