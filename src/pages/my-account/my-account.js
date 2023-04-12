@@ -17,7 +17,8 @@ const MyAccount = () => {
                       <div className="block float-left">
                         <Avatar
                           style={{
-                            width:"114px",
+                            maxWidth:"114px",
+                            width:"100%",
                             height:"auto"
                         }}
                           src={mockAvatar}
@@ -26,6 +27,17 @@ const MyAccount = () => {
                       <div className="block ml-32">
                         <h1 className="font-with-inter text-color text-xl font-medium">LINE-Cameron</h1>
                         <p className="primary-color">Classic Member</p>
+
+                        <div className="columns-2">
+                          <div className="block">
+                            <h1>20</h1>
+                            <p>คะแนนที่คุณมี</p>
+                          </div>
+                          <div className="block">
+                            <h1>220</h1>
+                            <p>คะแนนที่คุณเคยใช้</p>
+                          </div>
+                        </div>
                       </div>
                 </section>
                 <section className="mt-7 py-6 pb-20" style={{backgroundColor:"#F8F8F8"}}>
