@@ -7,17 +7,17 @@ import HeaderMobile from "../../assets/components/header";
 import RewardSection from "../../assets/components/reward-section";
 
 const RewardsPage = () => {
-    return (
-        <div>
-            <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="แลกของรางวัล" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
-            <main>
-                <section className="mt-7 py-6 pb-20" style={{backgroundColor:"#F8F8F8"}}>
-                    <RewardSection />
-                </section>
-            </main>
-            <FooterMenu activeMenu={2}/>
-        </div>
-    );
+  return (
+    <div>
+      <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="แลกของรางวัล" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
+      <main>
+        <section className="mt-7 py-6 pb-20" style={{backgroundColor:"#F8F8F8"}}>
+          <RewardSection />
+        </section>
+      </main>
+      <FooterMenu activeMenu={2}/>
+    </div>
+  );
 }
 
 export default RewardsPage;
