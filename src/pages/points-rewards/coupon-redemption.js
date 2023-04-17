@@ -126,14 +126,14 @@ const CouponRedemption = () => {
           </Button>
         </footer>
 
-        <Modal style={{top:"30%"}} className="popup-modal text-center" closable={false} open={acceptRedemption} onCancel={closeModalRedemption} onOk={showModalAccepted} okText="ยืนยันการใช้" cancelText="ยกเลิก">
+        <Modal className="popup-modal text-center" closable={false} open={acceptRedemption} onCancel={closeModalRedemption} onOk={showModalAccepted} okText="ยืนยันการใช้" cancelText="ยกเลิก">
           <h2 className="primary-color mb-2">
             <span className="text-lg font-bold inline-block">ยืนยันการใช้คูปอง</span>
           </h2>
           <p>ต้องใช้สิทธิ์ภายในวันที่ 22 ม.ค. 2022 <br/> และไม่สามารถยกเลิกการใช้สิทธิ์ภายหลังได้</p>
         </Modal>
 
-        <Modal style={{top:"30%"}} className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
+        <Modal className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
           <h2 className="primary-color mb-2">
             <FontAwesomeIcon icon={faCircleCheck} style={{fontSize:"54px"}}/><br/>
             <span className="text-lg font-bold mt-5 inline-block">แลกของรางวัลสำเร็จ</span>

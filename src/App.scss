@@ -205,6 +205,8 @@ main {
 }
 
 .popup-modal {
+  top:50%;
+  transform:translateY(-50%) !important;
   .ant-modal-content {
     padding:0;
     width:90%;
