@@ -212,3 +212,19 @@ main {
     }
   }
 }
+
+.ant-picker-dropdown {
+  position:absolute;
+  top:25% !important;
+  left:inherit !important;
+  .ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color:$primary_color !important;
+    border-radius:50%
+  }
+  .ant-picker-cell-today .ant-picker-cell-inner::before {
+    border:none !important;
+  }
+  .ant-picker-footer {
+    display:none;
+  }
+}
