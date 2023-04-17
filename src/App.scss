@@ -107,6 +107,8 @@ input{
 
 .my-rewards {
   display:flex;
+  box-shadow:0 3px 15px 0 #7777771A;
+  margin-bottom:16px;
   .ant-card-cover {
     width:30%;
     height:100%;
@@ -202,9 +204,11 @@ main {
   &:hover {color:white !important}
 }
 
-.logout-modal {
+.popup-modal {
   .ant-modal-content {
     padding:0;
+    width:90%;
+    margin:auto;
   }
   .ant-modal-body{
     padding:26px;
