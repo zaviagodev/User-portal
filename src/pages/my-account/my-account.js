@@ -74,7 +74,7 @@ const MyAccount = () => {
             <CardAccount link="/consent-for-disclosure" text="ความยินยอมในการเปิดเผยข้อมูล" icon={faLock}/>
 
             <h2 className="font-bold mt-6 mb-2">ความช่วยเหลือ</h2>
-            <CardAccount link="/point-collection-account" text="วิธีเก็บคะแนน" icon={faBook}/>
+            <CardAccount link="/point-collection" text="วิธีเก็บคะแนน" icon={faBook}/>
             <CardAccount link="/exchange-rewards" text="วิธีแลกของรางวัล" icon={faGift}/>
             <CardAccount link="/member-condition" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
 

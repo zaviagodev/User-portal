@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Button, Space } from "antd";
-import { faChevronLeft } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronLeft, faHistory } from "@fortawesome/pro-solid-svg-icons";
 import { faGiftCard, faUser } from "@fortawesome/pro-regular-svg-icons";
 import FooterMenu from "../../assets/components/footerMenu";
 import HeaderMobile from "../../assets/components/header";
@@ -25,9 +25,9 @@ const MyRewards = () => {
   }
   return (
     <div>
-      <HeaderMobile firstLink="/rewards" firstIcon={faChevronLeft} title="รางวัลของฉัน" secondBtn={true} secondLink="/history" secondIcon={faGiftCard} />
+      <HeaderMobile firstLink="/rewards" firstIcon={faChevronLeft} title="รางวัลของฉัน" secondBtn={true} secondLink="/history" secondIcon={faHistory} />
       <main className="p-6">
-        <CardReward image={giftVoucher} title={`หมอนรองคอน้องแมว ${<br/>} ฮอนด้านนทบุรี`} date="22 ม.ค. 2022"/>
+        <CardReward image={giftVoucher} title="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" date="22 ม.ค. 2022"/>
       </main>
       <FooterMenu activeMenu={2}/>
     </div>
