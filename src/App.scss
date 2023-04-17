@@ -74,6 +74,12 @@ input{
   font-family:'Sukhumvit Set', sans-serif !important;
 }
 
+.ant-btn-default {
+  &:hover,&:focus,&:active {
+    color:black !important;
+  }
+}
+
 .input-account {
   padding:11px 10px;
   height:40px;
@@ -183,6 +189,7 @@ main {
   }
   .ant-modal-footer {
     text-align:left;
+    margin:0;
   }
   .ant-btn-default { /* cancel (left btn) */
     border:none;
