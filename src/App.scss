@@ -247,6 +247,14 @@ main {
   background-color:white;
 }
 
+.not-like {
+  color:#00000033;
+}
+
+.like {
+  color:$primary_color;
+}
+
 .ant-picker-dropdown {
   position:absolute;
   top:25% !important;
