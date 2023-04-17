@@ -31,7 +31,7 @@ const EditAccount = () => {
         </main>
 
         <footer className="p-6 relative bottom-0">
-           <Button className={`save-btn ${edited ? "active" : "inactive"}`} disabled={edited ? false : true}>บันทึก</Button>
+           <Button className={`save-btn ${edited ? "active" : "inactive"}`} disabled={edited ? true : false}>บันทึก</Button>
         </footer>
       </div>
     )
