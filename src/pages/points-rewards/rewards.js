@@ -9,7 +9,7 @@ import RewardSection from "../../assets/components/reward-section";
 const RewardsPage = () => {
   return (
     <div>
-      <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="แลกของรางวัล" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
+      <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="แลกของรางวัล" secondBtn={true} secondLink="/my-rewards" secondIcon={faGiftCard} />
       <main>
         <section className="mt-7 py-6 pb-20" style={{backgroundColor:"#F8F8F8"}}>
           <RewardSection />

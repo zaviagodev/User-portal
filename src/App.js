@@ -5,6 +5,7 @@ import PointCollection from './pages/homepage/pointCollection';
 import RewardsPage from './pages/points-rewards/rewards';
 import History from './pages/history/history';
 import MyAccount from './pages/my-account/my-account';
+import MyRewards from './pages/points-rewards/my-rewards';
 
 import PointCollectionAccount from './pages/my-account/pointCollectionAccount';
 import TermsAndConditions from './pages/my-account/termsAndConditions';
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/rewards" element={<RewardsPage />} />
         <Route path="/history" element={<History />} />
         <Route path="/my-account" element={<MyAccount />} />
+        <Route path="/my-rewards" element={<MyRewards />} />
 
         <Route path="/point-collection-account" element={<PointCollectionAccount />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
