@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Avatar, Button, Space, Modal } from "antd";
 import { faChevronLeft, faChevronRight } from "@fortawesome/pro-solid-svg-icons";
 import { faGiftCard, faUser, faUserPen, faShield, faLock, faBook, faGift, faCreditCardFront, faArrowRightFromBracket } from "@fortawesome/pro-regular-svg-icons";
@@ -12,6 +12,17 @@ import { Link } from "react-router-dom";
 
 const MyAccount = () => {
     document.body.style.backgroundColor = "white";
+
+    const [logoutModal, setLogoutModal] = useState(false);
+
+    const openModal = () => {
+      setLogoutModal(true);
+    }
+
+    const closeModal = () => {
+      setLogoutModal(false);
+    }
+
     const CardAccount = (props) => {
       return (
         <Link to={props.link}>
@@ -68,9 +79,23 @@ const MyAccount = () => {
             <CardAccount link="/member-condition" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
 
             <h2 className="font-bold mt-6 mb-2">บัญชี</h2>
-            <CardAccount link="#" text="ออกจากระบบ" icon={faArrowRightFromBracket}/>
+            <Button onClick={openModal} className="bg-white flex items-center w-full justify-between mb-4" style={{height:"inherit",padding:"15px 20px",border:"none",boxShadow:"none",borderRadius:"8px"}}>
+              <Space>
+                <FontAwesomeIcon icon={faArrowRightFromBracket} style={{minWidth:"24px"}}/>
+                <span className="font-medium">ออกจากระบบ</span>
+              </Space>
+              <FontAwesomeIcon icon={faChevronRight} className="float-right"/>
+            </Button>
           </section>
         </main>
+
+        <Modal className="logout-modal text-center" open={logoutModal} onOk={closeModal} onCancel={closeModal} closable={false} cancelText="ยกเลิก" okText="ออกจากระบบ">
+          <h2 className="primary-color mb-2">
+            <FontAwesomeIcon icon={faArrowRightFromBracket} style={{fontSize:"54px"}}/><br/>
+            <span className="text-lg font-bold mt-5 inline-block">คุณต้องการออกจากระบบหรือไม่</span>
+          </h2>
+          <p>การใช้งานของคุณจะสิ้นสุดลง และคุณจะต้องเข้าสู่ระบบอีกครั้ง เพื่อเปิดการใช้งาน</p>
+        </Modal>
         <FooterMenu activeMenu={4}/>
       </div>
     );

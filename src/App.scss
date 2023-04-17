@@ -173,3 +173,35 @@ main {
   color:white;
   &:hover {color:white !important}
 }
+
+.logout-modal {
+  .ant-modal-content {
+    padding:0;
+  }
+  .ant-modal-body{
+    padding:26px;
+  }
+  .ant-modal-footer {
+    text-align:left;
+  }
+  .ant-btn-default { /* cancel (left btn) */
+    border:none;
+    border-radius:0 0 0 8px;
+    background-color: #0000000A;
+    color:black;
+    width:50%;
+    height:50px;
+  }
+  .ant-btn-primary { /* sign out (right btn) */
+    border:none;
+    border-radius:0 0 8px 0;
+    background-color:$primary_color;
+    color:white;
+    margin-inline-start:0 !important;
+    width:50%;
+    height:50px;
+    &:hover,&:active{
+      background-color:$primary_color;
+    }
+  }
+}
