@@ -100,10 +100,26 @@ input{
   min-width:170px;
   border-radius:10px;
   border:none;
-  .ant-card-head {
-    padding:0
+  .ant-card-head-title img {
+    border-radius:10px 10px 0 0;
   }
-  .ant-card-body {
+}
+
+.my-rewards {
+  display:flex;
+  .ant-card-cover {
+    width:30%;
+    height:100%;
+    float:left;
+    img {
+      border-radius:10px 0 0 10px;
+      aspect-ratio: 7/9;
+      object-fit: cover;
+    }
+  }
+  .ant-card-body{
+    width:70%;
+    float:right;
     padding:10px 17px 18px 17px;
   }
 }

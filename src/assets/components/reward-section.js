@@ -14,7 +14,7 @@ const RewardSection = () => {
     const CardReward = (props) => {
         return (
           <Link to={props.rewardLink}>
-            <Card className="reward-cards" title={(<img src={props.image}/>)}>
+            <Card className="reward-cards" cover={(<img src={props.image}/>)} bodyStyle={{padding:"10px 17px 18px 17px"}}>
               <h2 className="font-bold text-sm pe-3">{props.name}</h2>
               <h3 className="primary-color font-semibold mt-2 text-sm">
                   <FontAwesomeIcon icon={faStar} className="mr-2"/>

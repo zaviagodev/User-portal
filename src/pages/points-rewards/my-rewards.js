@@ -12,20 +12,22 @@ import pillowModulo from "../../assets/images/pillow-modulo.png";
 import coolerBag from "../../assets/images/cooler-bag.png";
 
 const MyRewards = () => {
+  document.body.style.backgroundColor = "#F8F8F8";
   const CardReward = (props) => {
     return (
-      <Card>
-        <img src={props.image} />
-        <h2>{props.title}</h2>
-        <p>สามารถใช้ได้ถึง {props.date}</p>
-      </Card>
+      <div className="my-rewards">
+        <Card cover={(<img src={props.image}/>)}>
+          <h2 className="font-bold text-color">{props.title}</h2>
+          <p className="mt-9 text-xs" style={{color:"#00000099"}}>สามารถใช้ได้ถึง {props.date}</p>
+        </Card>
+      </div>
     )
   }
   return (
     <div>
       <HeaderMobile firstLink="/rewards" firstIcon={faChevronLeft} title="รางวัลของฉัน" secondBtn={true} secondLink="/history" secondIcon={faGiftCard} />
       <main className="p-6">
-        <CardReward image={giftVoucher} title="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" date="22 ม.ค. 2022"/>
+        <CardReward image={giftVoucher} title={`หมอนรองคอน้องแมว ${<br/>} ฮอนด้านนทบุรี`} date="22 ม.ค. 2022"/>
       </main>
       <FooterMenu activeMenu={2}/>
     </div>
