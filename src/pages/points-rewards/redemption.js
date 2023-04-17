@@ -62,12 +62,12 @@ const Redemption = () => {
         <main>
           <img src={brandModulo} />
           <div className="brand-info p-6">
-            <div className="columns-2 flex items-center justify-between">
+            <div className="grid grid-cols-2 flex items-center justify-between">
               <div className="block">
                 <h5 className="text-xs">ของรางวัล</h5>
                 <h2 className="font-bold">หมอนรองคอน้องแมว<br/>ฮอนด้านนทบุรี</h2>
               </div>
-              <div className="block">
+              <div className="block text-right">
                 <Space>
                   <FontAwesomeIcon className={`text-xl ${like ? "like" : "not-like"}`} icon={faHeart} onClick={toggleLike}/>
                   <FontAwesomeIcon icon={faShareNodes}/>
@@ -75,13 +75,13 @@ const Redemption = () => {
               </div>
             </div>
 
-            <div className="columns-2 mt-4 pb-2">
+            <div className="grid grid-cols-2 mt-4 pb-2">
               <div className="block pr-4" style={{borderRight:"1px solid #0000001A"}}>
                 <p className="text-xs" style={{color:"#00000061"}}>คะแนนที่ใช้</p>
                 <h1 className="font-with-inter primary-color text-xl font-semibold">40 คะแนน</h1>
                 <p className="text-xs font-semibold line-through" style={{color:"#00000061"}}>มูลค่า 500 บาท</p>
               </div>
-              <div className="block">
+              <div className="block pl-4">
                 <p className="text-xs" style={{color:"#00000061"}}>สามารถใช้ได้ถึง</p>
                 <h1 className="font-with-inter primary-color text-md font-semibold">22 ม.ค. 2022</h1>
               </div>
@@ -126,14 +126,14 @@ const Redemption = () => {
           </Button>
         </footer>
 
-        <Modal style={{top:"25%",bottom:"25%"}} className="popup-modal text-center" closable={false} open={acceptRedemption} onCancel={closeModalRedemption} onOk={showModalAccepted} okText="ยืนยันการแลก" cancelText="ยกเลิก">
+        <Modal style={{top:"30%"}} className="popup-modal text-center" closable={false} open={acceptRedemption} onCancel={closeModalRedemption} onOk={showModalAccepted} okText="ยืนยันการแลก" cancelText="ยกเลิก">
           <h2 className="primary-color mb-2">
             <span className="text-lg font-bold inline-block">ยืนยันการแลกของรางวัล</span>
           </h2>
           <p>หลังจากกด “ยืนยันการแลก” <br/>คุณสามารถเก็บไว้ใช้ภายหลังได้</p>
         </Modal>
 
-        <Modal style={{top:"25%",bottom:"25%"}} className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
+        <Modal style={{top:"30%"}} className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
           <h2 className="primary-color mb-2">
             <FontAwesomeIcon icon={faCircleCheck} style={{fontSize:"54px"}}/><br/>
             <span className="text-lg font-bold mt-5 inline-block">แลกของรางวัลสำเร็จ</span>

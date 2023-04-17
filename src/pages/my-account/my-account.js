@@ -89,7 +89,7 @@ const MyAccount = () => {
           </section>
         </main>
 
-        <Modal style={{top:"25%",bottom:"25%"}} className="popup-modal text-center" open={logoutModal} onOk={closeModal} onCancel={closeModal} closable={false} cancelText="ยกเลิก" okText="ออกจากระบบ">
+        <Modal style={{top:"30%"}} className="popup-modal text-center" open={logoutModal} onOk={closeModal} onCancel={closeModal} closable={false} cancelText="ยกเลิก" okText="ออกจากระบบ">
           <h2 className="primary-color mb-2">
             <FontAwesomeIcon icon={faArrowRightFromBracket} style={{fontSize:"54px"}}/><br/>
             <span className="text-lg font-bold mt-5 inline-block">คุณต้องการออกจากระบบหรือไม่</span>
