@@ -64,7 +64,7 @@ const Redemption = () => {
       <div>
         <HeaderMobile firstIcon={faChevronLeft} title={(<img src={HondaNon} />)} secondBtn={false} />
         <main>
-          <img src={brandModulo} />
+          <img src={neckPillowCat} width="100%"/>
           <div className="brand-info p-6">
             <div className="grid grid-cols-2 flex items-center justify-between">
               <div className="block">
