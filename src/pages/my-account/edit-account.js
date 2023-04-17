@@ -10,7 +10,7 @@ const EditAccount = () => {
     const [edited, isEdited] = useState(false);
     return (
       <div>
-        <HeaderMobile firstLink="/my-account" firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={false}/>
+        <HeaderMobile firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={false}/>
         <main className="p-6 mb-0">
           <h2 className="font-bold">ข้อมูลส่วนตัว</h2>
 

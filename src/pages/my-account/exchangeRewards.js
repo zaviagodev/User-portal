@@ -6,7 +6,7 @@ import HeaderMobile from "../../assets/components/header";
 const ExchangeRewards = () => {
     return (
         <div>
-            <HeaderMobile firstLink="/my-account" firstIcon={faChevronLeft} title="วิธีแลกของรางวัล" secondBtn={false}/>
+            <HeaderMobile firstIcon={faChevronLeft} title="วิธีแลกของรางวัล" secondBtn={false}/>
             <main className="p-6">
                 <h2 className="font-bold">ขั้นตอนในการแลกของรางวัลมีดังนี้</h2>
                 <h3 className="font-bold text-sm mt-4">1. เลือกรางวัลที่ต้องการแลก</h3>

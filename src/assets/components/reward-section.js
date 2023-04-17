@@ -29,7 +29,7 @@ const RewardSection = () => {
         <>
             <h2 className="font-bold mb-2 px-6">ของรางวัลทั้งหมด (<span id="num-all-items">9</span>)</h2>
             <div className="overflow-scroll flex gap-x-4 flex-nowrap px-6">
-                <CardReward image={coolerBag} name="กระเป๋าเก็บความเย็น ฮอนด้านนทบุรี" point="40" rewardLink="#"/>
+                <CardReward image={coolerBag} name="กระเป๋าเก็บความเย็น ฮอนด้านนทบุรี" point="40" rewardLink="/redemption"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 50 บาท" point="10" rewardLink="#"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 200 บาท" point="30" rewardLink="#"/>
                 <CardReward image={giftVoucher} name="คูปองแทนเงินสด มูลค่า 500 บาท" point="50" rewardLink="#"/>

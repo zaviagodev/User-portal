@@ -6,7 +6,7 @@ import HeaderMobile from "../../assets/components/header";
 const MemberCondition = () => {
     return (
         <div>
-            <HeaderMobile firstLink="/my-account" firstIcon={faChevronLeft} title="เงื่อนไขระดับของสมาชิก" secondBtn={false}/>
+            <HeaderMobile firstIcon={faChevronLeft} title="เงื่อนไขระดับของสมาชิก" secondBtn={false}/>
             <main className="p-6">
                 <h2 className="font-bold">เงื่อนไขระดับของสมาชิก</h2>
                 <h3 className="font-bold text-sm mt-6">1. Classic</h3>

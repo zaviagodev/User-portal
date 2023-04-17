@@ -25,7 +25,7 @@ const MyRewards = () => {
   }
   return (
     <div>
-      <HeaderMobile firstLink="/rewards" firstIcon={faChevronLeft} title="รางวัลของฉัน" secondBtn={true} secondLink="/history" secondIcon={faHistory} />
+      <HeaderMobile firstIcon={faChevronLeft} title="รางวัลของฉัน" secondBtn={true} secondLink="/history" secondIcon={faHistory} />
       <main className="p-6">
         <h2 className="font-bold mb-2">รางวัลของฉัน (<span id="total-reward">3</span>)</h2>
         <CardReward image={giftVoucher} title="หมอนรองคอน้องแมว ฮอนด้านนทบุรี" date="22 ม.ค. 2022"/>

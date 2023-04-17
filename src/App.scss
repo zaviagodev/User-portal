@@ -239,6 +239,14 @@ main {
   }
 }
 
+.brand-info {
+  border-radius:12px 12px 0 0;
+  margin-top:-24px;
+  position:relative;
+  z-index:99;
+  background-color:white;
+}
+
 .ant-picker-dropdown {
   position:absolute;
   top:25% !important;

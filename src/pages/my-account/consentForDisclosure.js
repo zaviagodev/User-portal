@@ -6,7 +6,7 @@ import HeaderMobile from "../../assets/components/header";
 const ConsentForDisclosure = () => {
     return (
         <div>
-            <HeaderMobile firstLink="/my-account" firstIcon={faChevronLeft} title="ความยินยอมในการเปิดเผยข้อมูล" secondBtn={false}/>
+            <HeaderMobile firstIcon={faChevronLeft} title="ความยินยอมในการเปิดเผยข้อมูล" secondBtn={false}/>
             <main className="p-6">
                 <h2 className="font-bold">นโยบายความเป็นส่วนตัว</h2>
                 <p className="text-sm mt-3 font-medium" style={{color:"#585858"}}>

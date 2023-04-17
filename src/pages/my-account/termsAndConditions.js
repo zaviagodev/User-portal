@@ -6,7 +6,7 @@ import HeaderMobile from "../../assets/components/header";
 const TermsAndConditions = () => {
     return (
         <div>
-            <HeaderMobile firstLink="/my-account" firstIcon={faChevronLeft} title="ข้อกำหนดและเงื่อนไข" secondBtn={false}/>
+            <HeaderMobile firstIcon={faChevronLeft} title="ข้อกำหนดและเงื่อนไข" secondBtn={false}/>
             <main className="p-6">
                 <h2 className="font-bold">ข้อกำหนดและเงื่อนไขการใช้ Hondanont Loyalty</h2>
                 <p className="text-sm mt-3 font-medium" style={{color:"#585858"}}>
