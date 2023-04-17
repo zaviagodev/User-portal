@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Card, Button, Space } from "antd";
+import { Card, Button, Space, Collapse, theme, Modal } from "antd";
 import { faChevronLeft, faHeart } from "@fortawesome/pro-solid-svg-icons";
-import { faGiftCard, faUser, faHistory, faShareNodes, faGift } from "@fortawesome/pro-regular-svg-icons";
+import { faGiftCard, faUser, faHistory, faShareNodes, faGift, faCircleCheck } from "@fortawesome/pro-regular-svg-icons";
 import HondaNon from "../../assets/images/honda-non.svg";
 import FooterMenu from "../../assets/components/footerMenu";
 import HeaderMobile from "../../assets/components/header";
@@ -12,8 +12,7 @@ import neckPillowModulo from "../../assets/images/neck-pillow-modulo.png";
 import pillowModulo from "../../assets/images/pillow-modulo.png";
 import coolerBag from "../../assets/images/cooler-bag.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CaretRightOutlined, PlusOutlined, MinusOutlined } from '@ant-design/icons';
-import { Collapse, theme } from 'antd';
+import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 
 const Redemption = () => {
     document.body.style.backgroundColor = "white";
@@ -35,6 +34,27 @@ const Redemption = () => {
       borderRadius: "8px",
       border: 'none',
     };
+
+    const [acceptRedemption, setAcceptRedemption] = useState(false);
+
+    const showModalRedemption = () => {
+        setAcceptRedemption(true);
+    }
+
+    const closeModalRedemption = () => {
+        setAcceptRedemption(false);
+    }
+
+    const [accepted, setAccepted] = useState(false);
+
+    const showModalAccepted = () => {
+        setAccepted(true);
+        setAcceptRedemption(false);
+    }
+
+    const closeModalAccepted = () => {
+        window.location.replace("/my-rewards");
+    }
 
     return (
       <div>
@@ -98,13 +118,28 @@ const Redemption = () => {
           </div>
         </main>
         <footer className="p-6 fixed bottom-0 w-full">
-          <Button className="save-btn active">
+          <Button className="save-btn active" onClick={showModalRedemption}>
             <Space>
               <FontAwesomeIcon icon={faGift}/>
               <span>แลกของรางวัล</span>
             </Space>
           </Button>
         </footer>
+
+        <Modal style={{top:"25%",bottom:"25%"}} className="popup-modal text-center" closable={false} open={acceptRedemption} onCancel={closeModalRedemption} onOk={showModalAccepted} okText="ยืนยันการแลก" cancelText="ยกเลิก">
+          <h2 className="primary-color mb-2">
+            <span className="text-lg font-bold inline-block">ยืนยันการแลกของรางวัล</span>
+          </h2>
+          <p>หลังจากกด “ยืนยันการแลก” <br/>คุณสามารถเก็บไว้ใช้ภายหลังได้</p>
+        </Modal>
+
+        <Modal style={{top:"25%",bottom:"25%"}} className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
+          <h2 className="primary-color mb-2">
+            <FontAwesomeIcon icon={faCircleCheck} style={{fontSize:"54px"}}/><br/>
+            <span className="text-lg font-bold mt-5 inline-block">แลกของรางวัลสำเร็จ</span>
+          </h2>
+          <p>สามารถกด “ดูรางวัลของฉัน” เพื่อใช้งานคูปองได้เลย</p>
+        </Modal>
       </div>
     );
 }
