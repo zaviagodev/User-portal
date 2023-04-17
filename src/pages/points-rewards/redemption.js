@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button, Space } from "antd";
 import { faChevronLeft, faHeart } from "@fortawesome/pro-solid-svg-icons";
-import { faGiftCard, faUser, faHistory, faShareNodes } from "@fortawesome/pro-regular-svg-icons";
+import { faGiftCard, faUser, faHistory, faShareNodes, faGift } from "@fortawesome/pro-regular-svg-icons";
 import HondaNon from "../../assets/images/honda-non.svg";
 import FooterMenu from "../../assets/components/footerMenu";
 import HeaderMobile from "../../assets/components/header";
@@ -94,8 +94,17 @@ const Redemption = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis nisi tincidunt, scelerisque nulla a, volutpat orci. Etiam posuere pharetra enim, eu volutpat mi posuere sit amet. Vivamus porta porttitor finibus. Phasellus porttitor ac nisi suscipit condimentum. Duis volutpat risus eu aliquam dignissim.</p>
               </Panel>
             </Collapse>
+
           </div>
         </main>
+        <footer className="p-6 fixed bottom-0 w-full">
+          <Button className="save-btn active">
+            <Space>
+              <FontAwesomeIcon icon={faGift}/>
+              <span>แลกของรางวัล</span>
+            </Space>
+          </Button>
+        </footer>
       </div>
     );
 }
