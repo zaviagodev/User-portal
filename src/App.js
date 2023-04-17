@@ -7,6 +7,7 @@ import History from './pages/history/history';
 import MyAccount from './pages/my-account/my-account';
 import MyRewards from './pages/points-rewards/my-rewards';
 import Redemption from './pages/points-rewards/redemption';
+import CouponRedemption from './pages/points-rewards/coupon-redemption';
 
 import TermsAndConditions from './pages/my-account/termsAndConditions';
 import ConsentForDisclosure from './pages/my-account/consentForDisclosure';
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/my-account" element={<MyAccount />} />
         <Route path="/my-rewards" element={<MyRewards />} />
         <Route path="/redemption" element={<Redemption />} />
+        <Route path="/coupon-redemption" element={<CouponRedemption />} />
 
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/consent-for-disclosure" element={<ConsentForDisclosure />} />

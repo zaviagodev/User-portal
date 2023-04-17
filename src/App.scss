@@ -239,13 +239,15 @@ main {
       background-color:$primary_color;
     }
   }
-  &.no-ok {
-    .ant-btn-primary {
+  &.one-btn {
+    .ant-btn-default {
       display:none;
     }
-    .ant-btn-default {
+    .ant-btn-primary {
       width:100%;
       border-radius:0 0 8px 8px;
+      background-color: #0000000A;
+      color:black;
     }
   }
 }
