@@ -26,53 +26,53 @@ const MyAccount = () => {
       )
     }
     return (
-        <div>
-            <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
-            <main>
-                <section className="p-6">
-                      <div className="block float-left">
-                        <Avatar
-                          style={{
-                            maxWidth:"114px",
-                            width:"100%",
-                            height:"auto"
-                        }}
-                          src={mockAvatar}
-                        />
-                      </div>
-                      <div className="block ml-32">
-                        <h1 className="font-with-inter text-color text-xl font-medium">LINE-Cameron</h1>
-                        <p className="primary-color">Classic Member</p>
+      <div>
+        <HeaderMobile firstLink="/" firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
+        <main>
+          <section className="p-6">
+            <div className="block float-left">
+              <Avatar
+                style={{
+                  maxWidth:"114px",
+                  width:"100%",
+                  height:"auto"
+              }}
+                src={mockAvatar}
+              />
+            </div>
+            <div className="block ml-32">
+              <h1 className="font-with-inter text-color text-xl font-medium">LINE-Cameron</h1>
+              <p className="primary-color">Classic Member</p>
 
-                        <div className="columns-2 mt-4">
-                          <div className="block pr-4" style={{borderRight:"1px solid #0000001A"}}>
-                            <h1 className="font-with-inter primary-color text-3xl font-semibold">20</h1>
-                            <p className="text-xs font-semibold">คะแนนที่คุณมี</p>
-                          </div>
-                          <div className="block">
-                            <h1 className="font-with-inter primary-color text-3xl font-semibold">220</h1>
-                            <p className="text-xs font-semibold">คะแนนที่คุณเคยใช้</p>
-                          </div>
-                        </div>
-                      </div>
-                </section>
-                <section className="mt-7 p-6 pb-20" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
-                    <h2 className="font-bold mb-2">การตั้งค่าและความเป็นส่วนตัว</h2>
-                    <CardAccount link="/edit-account" text="ข้อมูลส่วนตัว" icon={faUserPen}/>
-                    <CardAccount link="/terms-and-conditions" text="ข้อกำหนดและเงื่อนไข" icon={faShield}/>
-                    <CardAccount link="/consent-for-disclosure" text="ความยินยอมในการเปิดเผยข้อมูล" icon={faLock}/>
+              <div className="columns-2 mt-4">
+                <div className="block pr-4" style={{borderRight:"1px solid #0000001A"}}>
+                  <h1 className="font-with-inter primary-color text-3xl font-semibold">20</h1>
+                  <p className="text-xs font-semibold">คะแนนที่คุณมี</p>
+                </div>
+                <div className="block">
+                  <h1 className="font-with-inter primary-color text-3xl font-semibold">220</h1>
+                  <p className="text-xs font-semibold">คะแนนที่คุณเคยใช้</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="mt-7 p-6 pb-20" style={{backgroundColor:"#F8F8F8",borderRadius:"12px 12px 0 0"}}>
+            <h2 className="font-bold mb-2">การตั้งค่าและความเป็นส่วนตัว</h2>
+            <CardAccount link="/edit-account" text="ข้อมูลส่วนตัว" icon={faUserPen}/>
+            <CardAccount link="/terms-and-conditions" text="ข้อกำหนดและเงื่อนไข" icon={faShield}/>
+            <CardAccount link="/consent-for-disclosure" text="ความยินยอมในการเปิดเผยข้อมูล" icon={faLock}/>
 
-                    <h2 className="font-bold mt-6 mb-2">ความช่วยเหลือ</h2>
-                    <CardAccount link="/point-collection-account" text="วิธีเก็บคะแนน" icon={faBook}/>
-                    <CardAccount link="/exchange-rewards" text="วิธีแลกของรางวัล" icon={faGift}/>
-                    <CardAccount link="/member-condition" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
+            <h2 className="font-bold mt-6 mb-2">ความช่วยเหลือ</h2>
+            <CardAccount link="/point-collection-account" text="วิธีเก็บคะแนน" icon={faBook}/>
+            <CardAccount link="/exchange-rewards" text="วิธีแลกของรางวัล" icon={faGift}/>
+            <CardAccount link="/member-condition" text="เงื่อนไขระดับของสมาชิก" icon={faCreditCardFront}/>
 
-                    <h2 className="font-bold mt-6 mb-2">บัญชี</h2>
-                    <CardAccount link="#" text="ออกจากระบบ" icon={faArrowRightFromBracket}/>
-                </section>
-            </main>
-            <FooterMenu activeMenu={4}/>
-        </div>
+            <h2 className="font-bold mt-6 mb-2">บัญชี</h2>
+            <CardAccount link="#" text="ออกจากระบบ" icon={faArrowRightFromBracket}/>
+          </section>
+        </main>
+        <FooterMenu activeMenu={4}/>
+      </div>
     );
 }
 
