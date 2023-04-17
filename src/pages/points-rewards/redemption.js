@@ -12,10 +12,14 @@ import neckPillowModulo from "../../assets/images/neck-pillow-modulo.png";
 import pillowModulo from "../../assets/images/pillow-modulo.png";
 import coolerBag from "../../assets/images/cooler-bag.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CaretRightOutlined, PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import { Collapse, theme } from 'antd';
 
 const Redemption = () => {
     document.body.style.backgroundColor = "white";
     const [like, setLike] = useState(false);
+
+    const { Panel } = Collapse;
 
     const toggleLike = () => {
       if (like){
@@ -24,6 +28,13 @@ const Redemption = () => {
         setLike(true);
       }
     }
+
+    const panelStyle = {
+      marginBottom: 16,
+      background: "#F8F8F8",
+      borderRadius: "8px",
+      border: 'none',
+    };
 
     return (
       <div>
@@ -56,7 +67,7 @@ const Redemption = () => {
               </div>
             </div>
 
-            <div style={{borderTop:"1px solid #0000001A",paddingTop:"20px"}}>
+            <div style={{borderTop:"1px solid #0000001A",padding:"20px 0 32px"}}>
               <h2 className="font-bold">รายละเอียด</h2>
               <ul className="text-sm list-disc mt-3 ps-4 ">
                 <li>สมาชิกหลักเท่านั้นที่มีสิทธิใช้คะแนนเพื่อแลกรับของรางวัล</li>
@@ -65,6 +76,24 @@ const Redemption = () => {
                 <li style={{listStyle:"none"}} className="primary-color font-medium mt-2"><a href="#">อ่านเพิ่มเติม</a></li>
               </ul>
             </div>
+
+            <Collapse
+              bordered={false}
+              expandIcon={({ isActive }) => (
+                isActive ? <MinusOutlined /> : <PlusOutlined />
+              )}
+              expandIconPosition="end"
+              style={{
+                background: "white",
+              }}
+            >
+              <Panel header="วิธีแลกของรางวัล" key="1" style={panelStyle}>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis nisi tincidunt, scelerisque nulla a, volutpat orci. Etiam posuere pharetra enim, eu volutpat mi posuere sit amet. Vivamus porta porttitor finibus. Phasellus porttitor ac nisi suscipit condimentum. Duis volutpat risus eu aliquam dignissim.</p>
+              </Panel>
+              <Panel header="เงื่อนไขในการแลกของรางวัล" key="2" style={panelStyle}>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis nisi tincidunt, scelerisque nulla a, volutpat orci. Etiam posuere pharetra enim, eu volutpat mi posuere sit amet. Vivamus porta porttitor finibus. Phasellus porttitor ac nisi suscipit condimentum. Duis volutpat risus eu aliquam dignissim.</p>
+              </Panel>
+            </Collapse>
           </div>
         </main>
       </div>
