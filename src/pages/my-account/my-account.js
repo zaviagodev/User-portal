@@ -38,7 +38,7 @@ const MyAccount = () => {
     }
     return (
       <div>
-        <HeaderMobile firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={true} secondLink="#" secondIcon={faGiftCard} />
+        <HeaderMobile firstIcon={faChevronLeft} title="ข้อมูลของฉัน" secondBtn={true} secondLink="/my-rewards" secondIcon={faGiftCard} />
         <main>
           <section className="p-6">
             <div className="block float-left">

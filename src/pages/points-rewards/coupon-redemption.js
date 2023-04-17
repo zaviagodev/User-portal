@@ -133,7 +133,7 @@ const CouponRedemption = () => {
           <p>ต้องใช้สิทธิ์ภายในวันที่ 22 ม.ค. 2022 <br/> และไม่สามารถยกเลิกการใช้สิทธิ์ภายหลังได้</p>
         </Modal>
 
-        <Modal className="popup-modal text-center no-ok" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} cancelText="ดูรางวัลของฉัน">
+        <Modal className="popup-modal text-center one-btn" closable={false} open={accepted} onCancel={closeModalAccepted} onOk={closeModalAccepted} okText="ดูรางวัลของฉัน">
           <h2 className="primary-color mb-2">
             <FontAwesomeIcon icon={faCircleCheck} style={{fontSize:"54px"}}/><br/>
             <span className="text-lg font-bold mt-5 inline-block">แลกของรางวัลสำเร็จ</span>
