@@ -63,10 +63,16 @@ $secondary_color:#00000061;
   &.inactive {
     background-color:#BBBBBB;
     color:white;
+    &:hover {
+      color:white !important;
+    }
   }
   &.active {
     background-color:$primary_color;
     color:white;
+    &:hover {
+      color:white !important;
+    }
   }
 }
 
