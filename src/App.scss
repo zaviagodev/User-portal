@@ -260,6 +260,19 @@ main {
       color:black;
     }
   }
+  &.ok-btn {
+    .ant-btn-default {
+      display:none;
+    }
+    .ant-btn-primary {
+      width:100%;
+      border-radius:0 0 8px 8px;
+      background-color:$primary_color;
+      &:hover,&:active{
+        background-color:$primary_color;
+      }
+    }
+  }
 }
 
 .brand-info {
