@@ -10,25 +10,25 @@ const FooterMenu = (props) => {
         <nav>
           <ul className="flex justify-between">
             <li className={`text-sm ${(props.activeMenu === 1 ? "primary-color" : "menu-inactive-color")}`}>
-              <Link to="/" className="px-1 box-border">
+              <Link to="/">
                 <FontAwesomeIcon icon={faHome} className="block text-xl m-auto"/>
                 <span className={`mt-1 inline-block ${(props.activeMenu === 1 ? "font-bold" : "font-medium")}`}>หน้าหลัก</span>
               </Link>
             </li>
             <li className={`text-sm ${(props.activeMenu === 2 ? "primary-color" : "menu-inactive-color")}`}>
-              <Link to="/rewards" className="px-1 box-border">
+              <Link to="/rewards">
                 <FontAwesomeIcon icon={faGift} className="block text-xl m-auto"/>
                 <span className={`mt-1 inline-block ${(props.activeMenu === 2 ? "font-bold" : "font-medium")}`}>แลกของรางวัล</span>
               </Link>
             </li>
             <li className={`text-sm ${(props.activeMenu === 3 ? "primary-color" : "menu-inactive-color")}`}>
-              <Link to="/history" className="px-1 box-border">
+              <Link to="/history">
                 <FontAwesomeIcon icon={faHistory} className="block text-xl m-auto"/>
                 <span className={`mt-1 inline-block ${(props.activeMenu === 3 ? "font-bold" : "font-medium")}`}>ประวัติ</span>
               </Link>
             </li>
             <li className={`text-sm ${(props.activeMenu === 4 ? "primary-color" : "menu-inactive-color")}`}>
-              <Link to="/my-account" className="px-1 box-border">
+              <Link to="/my-account">
                 <FontAwesomeIcon icon={faUser} className="block text-xl m-auto"/>
                 <span className={`mt-1 inline-block ${(props.activeMenu === 4 ? "font-bold" : "font-medium")}`}>ข้อมูลของฉัน</span>
               </Link>

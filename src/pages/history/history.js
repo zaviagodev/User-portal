@@ -6,6 +6,7 @@ import { faChevronLeft } from "@fortawesome/pro-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const History = () => {
+  document.body.style.backgroundColor = "#F8F8F8";
     const CardHistory = (props) => {
         return (
           <div className="mb-4 card-history">
