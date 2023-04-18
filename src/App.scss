@@ -152,6 +152,14 @@ input{
   .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
     color:$primary_color !important;
   }
+  &.three {
+    .ant-tabs .ant-tabs-tab{
+      width:33.33333333333333%;
+    }
+    .ant-tabs-nav {
+      margin-bottom:24px;
+    }
+  }
 }
 
 .history-title {
