@@ -142,7 +142,7 @@ const Redemption = () => {
             <FontAwesomeIcon icon={faCircleCheck} style={{fontSize:"54px"}}/><br/>
             <span className="text-lg font-bold mt-5 inline-block">แลกของรางวัลสำเร็จ</span>
           </h2>
-          <p>สามารถกด “ดูรางวัลของฉัน” เพื่อใช้งานคูปองได้เลย</p>
+          <p>สามารถกด “ดูรางวัลของฉัน” <br/>เพื่อใช้งานคูปองได้เลย</p>
         </Modal>
       </div>
     );

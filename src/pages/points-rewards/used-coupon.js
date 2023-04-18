@@ -29,7 +29,7 @@ const UsedCoupon = () => {
         window.location.replace("/my-rewards");
     }
 
-    const CountdownTimer = ({ minutes = 15 }) => {
+    const CountdownTimer = ({ minutes = 1 }) => {
         const [remainingSeconds, setRemainingSeconds] = useState(minutes * 60);
       
         useEffect(() => {
@@ -80,6 +80,7 @@ const UsedCoupon = () => {
                   <FontAwesomeIcon icon={faCopy}/>
                 </Space>
               </Button>
+              <p className="secondary-color text-sm mt-3 mb-6 font-medium">ใช้ภายใน <CountdownTimer /></p>
               <p className="secondary-color text-sm mt-6 font-medium">กรุณากรอกหรือส่งโค้ดนี้ให้พนักงาน<br/>ที่หน้าร้านเพื่อรับของรางวัล</p>
             </div>
         )
@@ -102,6 +103,7 @@ const UsedCoupon = () => {
             <div className="text-center">
               <img src={mockBarcode} className="m-auto"/>
               <p className="text-black text-sm font-with-inter" id="barcode-id">12134616265431</p>
+              <p className="secondary-color text-sm mt-3 mb-6 font-medium">ใช้ภายใน <CountdownTimer /></p>
               <p className="secondary-color text-sm mt-6">กรุณานำ BarCode นี้ให้พนักงานสแกน<br/>ที่หน้าร้านเพื่อรับของรางวัล</p>
             </div>
         )
