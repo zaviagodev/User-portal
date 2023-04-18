@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const FooterMenu = (props) => {
     return (
-      <footer className="py-3 pr-2 fixed w-full bg-white bottom-0 z-50" style={{borderTop:"1px solid #F8F8F8"}}>
+      <footer className="pt-4 pb-3 pr-2 fixed w-full bg-white bottom-0 z-50" style={{borderTop:"1px solid #F8F8F8"}}>
         <nav>
           <ul className="block w-full">
             <li className={`text-sm inline-block text-center w-1/4 ${(props.activeMenu === 1 ? "primary-color" : "menu-inactive-color")}`}>
